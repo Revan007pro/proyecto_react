@@ -25,6 +25,14 @@ function App(){
             />
           </a>
         </p>
+        <p><a>¿No tienes cuenta?</a><a id="registrarse" className="span" onClick={()=>{
+          const registrarse=document.getElementById("registrarse")
+          registrarse.addEventListener('click', ()=>{
+            if (registrarse) {
+              window.location.href="/registrarse"
+            }
+          })
+        }}>Registrarse</a></p>
         
         <div className="div-boton">
           <p><button className="button" type="button" onClick={(e)=>{
